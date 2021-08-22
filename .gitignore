@@ -1,0 +1,22 @@
+## latex 
+*.aux
+*.lof
+*.log
+*.log.gz
+*.replay
+*.replay.gz
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
