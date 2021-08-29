@@ -6,5 +6,6 @@ public enum IDType {
     PLAYER2,
     SPECTATOR,
     NPC,
-    OBJECT
+    OBJECT,
+    KI
 }

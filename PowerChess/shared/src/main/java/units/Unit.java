@@ -5,10 +5,11 @@ import util.ID;
 
 public abstract class Unit {
 
-    private UnitType type;
+    private String name;
     private ID id;
 
-    protected Unit(ID id, UnitType type){
+    protected Unit(ID id, String name){
+        this.name = name;
         this.id = id;
     }
 

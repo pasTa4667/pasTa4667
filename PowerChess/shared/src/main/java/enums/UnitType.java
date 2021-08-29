@@ -2,10 +2,12 @@ package enums;
 
 public enum UnitType {
 
-    KING,
-    QUEEN,
-    PAWN,
-    ROOK,
-    BISHOP,
-    KNIGHT,
+    FIGURE,
+    PORTAL,
+    POWER_UP,
+    NPC,
+    WOOD;
+
+    private UnitType(){}
+
 }
