@@ -1,7 +1,6 @@
 package units;
 
 import board.Board;
-import enums.FieldType;
 import enums.FigureType;
 import enums.UnitType;
 import util.BaseFigure;

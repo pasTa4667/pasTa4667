@@ -3,11 +3,8 @@ package board;
 import configuration.ScenarioConfig;
 import enums.BoardState;
 import units.Unit;
-import units.WoodUnit;
 import util.ID;
 import util.Position;
-
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,7 +14,7 @@ public class Board {
 
 
     private Field[][] grid;
-    private List<Unit> unit;
+    private List<Unit> units;
     private Map<ID, Unit> idToUnit;
 
     public Board(int sizeX, int sizeY){
