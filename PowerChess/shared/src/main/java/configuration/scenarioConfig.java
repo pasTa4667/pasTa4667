@@ -2,13 +2,13 @@ package configuration;
 
 import enums.BoardState;
 
-public class scenarioConfig {
+public class ScenarioConfig {
 
-    private final BoardState[][] scenario;
+    public final BoardState[][] scenario;
     private String author;
     private String name;
 
-    public scenarioConfig(BoardState[][] scenario, String author, String name) {
+    public ScenarioConfig(BoardState[][] scenario, String author, String name) {
         this.scenario = scenario;
         this.author = author;
         this.name = name;
@@ -17,6 +17,9 @@ public class scenarioConfig {
     public boolean isScenarioValid(){
         BoardState[][] var1 = this.scenario;
         int var1Length = var1.length;
+        int var2 = 2;
+        int var3 = var1Length - var2;
+
         if(var1Length < 8 || var1Length > 20){
             return false;
         }
@@ -26,8 +29,14 @@ public class scenarioConfig {
                 return false;
             }
 
-            for(int j = 0; j < var1Length; j++){
-                if(var1[i][j] == BoardState.WOOD){
+            for(int j = 0; j < var2; j++){
+                if(var1[j][i] == BoardState.WOOD){
+                    return false;
+                }
+            }
+
+            for(int j = var1Length; j > var3; j--){
+                if(var1[j][i] == BoardState.WOOD){
                     return false;
                 }
             }

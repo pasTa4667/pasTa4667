@@ -1,16 +1,36 @@
 package units;
 
+import board.Board;
 import enums.UnitType;
-import util.ID;
+import util.Position;
 
 public abstract class Unit {
 
-    private String name;
-    private ID id;
+    private UnitType type;
+    private Board board;
+    private Position position;
+    private int id;
 
-    protected Unit(ID id, String name){
-        this.name = name;
+    protected Unit(int id, UnitType type, Board board, Position position){
         this.id = id;
+        this.type = type;
+        this.board = board;
+        this.position = position;
     }
 
+    public UnitType getType() {
+        return type;
+    }
+
+    public Board getBoard() {
+        return board;
+    }
+
+    public Position getPosition() {
+        return position;
+    }
+
+    public int getId() {
+        return id;
+    }
 }

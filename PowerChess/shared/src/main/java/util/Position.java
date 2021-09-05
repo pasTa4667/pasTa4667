@@ -2,6 +2,7 @@ package util;
 
 public class Position {
 
+    public static final Position ORIGIN = new Position(0,0);
     private int x;
     private int y;
 

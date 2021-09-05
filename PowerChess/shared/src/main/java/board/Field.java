@@ -10,6 +10,7 @@ public class Field {
     private Unit unit;
 
     public Field(Board board, int x, int y){
+        this.board = board;
         this.position = new Position(x, y);
     }
 

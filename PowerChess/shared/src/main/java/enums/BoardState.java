@@ -2,7 +2,7 @@ package enums;
 
 public enum BoardState {
 
-    GRAS,
+    GRASS,
     WOOD;
 
     private BoardState(){}
