@@ -2,9 +2,11 @@ package units;
 
 import board.Board;
 import enums.FigureType;
+import enums.IDType;
 import enums.UnitType;
 import util.BaseFigure;
 import util.Direction;
+import util.ID;
 import util.Position;
 
 public class PlayerUnit extends Unit{
@@ -91,5 +93,9 @@ public class PlayerUnit extends Unit{
 
         }
         return false;
+    }
+
+    public ID getIDType(){
+        return new ID(this.getId(), this.PID == 1 ? IDType.PLAYER1 : IDType.PLAYER2);
     }
 }

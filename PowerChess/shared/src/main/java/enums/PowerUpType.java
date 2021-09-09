@@ -4,6 +4,6 @@ public enum PowerUpType {
 
     MP_UP,
     AP_UP,
-    RANGE_INC,
+    RANGE_UP,
 
 }
