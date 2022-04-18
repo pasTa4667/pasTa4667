@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<CMapTypes>
+  <archetypes>
+    <Item type="CBaseArchetypeDef">
+      <lodDist value="100" />
+      <flags value="0" />
+      <specialAttribute value="0" />
+      <bbMin x="-1.3181286" y="-1.4070569" z="-0.07892884" />
+      <bbMax x="1.3181286" y="1.1561501" z="1.9558369" />
+      <bsCentre x="0.0" y="-0.12545341" z="0.93845403" />
+      <bsRadius value="2.1011994" />
+      <hdTextureDist value="100" />
+      <name>doghouse</name>
+      <textureDictionary>doghouse</textureDictionary>
+      <physicsDictionary>doghouse</physicsDictionary>
+      <assetType>ASSET_TYPE_DRAWABLE</assetType>
+      <assetName>doghouse</assetName>
+    </Item>
+  </archetypes>
+  <name>doghouse</name>
+</CMapTypes>
