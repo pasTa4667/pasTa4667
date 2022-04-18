@@ -4,6 +4,7 @@ import board.Board;
 import enums.FigureType;
 import enums.IDType;
 import enums.UnitType;
+import events.character.MoveEvent;
 import util.BaseFigure;
 import util.Direction;
 import util.ID;
@@ -55,7 +56,8 @@ public class PlayerUnit extends Unit{
 
     private boolean knightMove(Direction dir){
         if(this.getBoard().isValidPosition(this.getPosition().add(dir))){
-
+            new MoveEvent(this.getIDType(), this.getPosition(), this.getPosition().add(dir));
+            return true;
         }
         return false;
     }
