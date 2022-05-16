@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.jp.jplearningapp.controllers.ControllerMain">
+    <children>
+        <MenuBar fx:id="menu" VBox.vgrow="NEVER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="_new" mnemonicParsing="false" onAction="#onActionNew" text="New" />
+                        <Menu mnemonicParsing="false" text="Open ">
+                            <items>
+                                <MenuItem fx:id="level_one" mnemonicParsing="false" onAction="#onActionLevel" text="Level 1" />
+                                <MenuItem fx:id="level_two" mnemonicParsing="false" onAction="#onActionLevel" text="Level 2" />
+                                <MenuItem fx:id="level_three" mnemonicParsing="false" onAction="#onActionLevel" text="Level 3" />
+                                <MenuItem fx:id="level_four" mnemonicParsing="false" onAction="#onActionLevel" text="Level 4" />
+                                <MenuItem fx:id="level_five" mnemonicParsing="false" onAction="#onActionLevel" text="Level 5" />
+                                <MenuItem fx:id="level_six" mnemonicParsing="false" onAction="#onActionLevel" text="Level 6" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Open Recent" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Close" />
+                        <MenuItem mnemonicParsing="false" text="Save" />
+                        <MenuItem mnemonicParsing="false" text="Save As…" />
+                        <MenuItem mnemonicParsing="false" text="Revert" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Preferences…" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem fx:id="quit" mnemonicParsing="false" onAction="#onActionQuit" text="Quit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Undo" />
+                        <MenuItem mnemonicParsing="false" text="Redo" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Cut" />
+                        <MenuItem mnemonicParsing="false" text="Copy" />
+                        <MenuItem mnemonicParsing="false" text="Paste" />
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" text="Select All" />
+                        <MenuItem mnemonicParsing="false" text="Unselect All" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="366.0" prefWidth="640.0" style="-fx-background-color: #58A4B0;" VBox.vgrow="ALWAYS">
+            <children>
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3d55" height="62.0" layoutY="229.0" stroke="#2c3d55" strokeType="INSIDE" width="640.0" />
+                <Text fx:id="promptText" fill="#aceca1" layoutX="260.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="かんじ" textAlignment="CENTER">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="meaningTF" alignment="CENTER" layoutX="8.0" layoutY="244.0" onAction="#onActionTextFields" onKeyPressed="#onKeyPressedTextFields">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="onyomiTF" alignment="CENTER" layoutX="226.0" layoutY="244.0" onAction="#onActionTextFields" onKeyPressed="#onKeyPressedTextFields">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="kunyomiTF" alignment="CENTER" layoutX="446.0" layoutY="244.0" onAction="#onActionTextFields" onKeyPressed="#onKeyPressedTextFields">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </TextField>
+                <Text fx:id="meaningLabel" fill="#2c3d55" layoutX="53.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Meaning" textAlignment="CENTER">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+                <Text fx:id="onyomiLabel" fill="#2c3d55" layoutX="276.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Onyomi" textAlignment="CENTER">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+                <Text fx:id="kunyomiLabel" fill="#2c3d55" layoutX="490.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kunyomi" textAlignment="CENTER">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Text>
+                <Text fx:id="meaningCorr" fill="#ff66b3" layoutX="8.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="186.40000000000003">
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font></Text>
+                <Text fx:id="onyomiCorr" fill="#ff66b3" layoutX="227.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="186.40000000000003">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font></Text>
+                <Text fx:id="kunyomiCorr" fill="#ff66b3" layoutX="446.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="186.40000000000003">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: #58a4b0;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.jp.jplearningapp.controllers.ControllerPick" onKeyPressed="#onKeyPressedVBox">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3d55" height="62.0" stroke="#2c3d55" strokeType="INSIDE" width="640.0" />
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="90.0" prefWidth="640.0" style="-fx-padding: 5px;">
+         <children>
+            <Text fill="#2c3d55" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your Level" textAlignment="CENTER" wrappingWidth="600.0">
+               <font>
+                  <Font name="Verdana" size="30.0" />
+               </font>
+            </Text>
+            <Slider id="levelSliderStyle" fx:id="levelSlider" blockIncrement="1.0" focusTraversable="false" majorTickUnit="10.0" min="1" max="60.0" minorTickCount="5" onDragDone="#onDragDone" prefHeight="30.0" prefWidth="600.0" showTickLabels="true" snapToTicks="true" style="-fx-padding: 20px;">
+               <tooltip>
+                  <Tooltip text="Kanji Level" />
+               </tooltip>
+            </Slider>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="90.0" prefWidth="640.0" style="-fx-padding: 5px; -fx-spacing: 10px;">
+         <children>
+            <Text fill="#2c3d55" strokeType="OUTSIDE" strokeWidth="0.0" text="Kanji or Vocabs" textAlignment="CENTER" wrappingWidth="600.0">
+               <font>
+                  <Font name="Verdana" size="30.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="choiceBox" focusTraversable="false" prefWidth="150.0" style="-fx-background-insets: 2px;" />
+         </children>
+      </VBox>
+      <SubScene fx:id="testSubScene" height="133.0" width="200.0">
+        <root>
+          <Region />
+        </root>
+      </SubScene>
+   </children>
+</VBox>
