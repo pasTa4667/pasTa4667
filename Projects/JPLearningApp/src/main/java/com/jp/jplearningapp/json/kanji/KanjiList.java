@@ -1,14 +1,12 @@
-package com.jp.jplearningapp.kanji_json;
+package com.jp.jplearningapp.json.kanji;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class KanjiList {
+public class KanjiList{
 
         private List<Kanji> allKanji;
-
-        public KanjiList(){}
 
         public KanjiList(List<Kanji> kanjiList){
                 this.allKanji = kanjiList;
@@ -38,6 +36,7 @@ public class KanjiList {
                 int rdm = (int)(Math.random() * list.size());
                 return list.get(rdm);
         }
+
 
         public List<Kanji> getAllKanji(){
                 return allKanji;

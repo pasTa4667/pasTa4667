@@ -1,4 +1,4 @@
-package com.jp.jplearningapp;
+package com.jp.jplearningapp.json;
 
 public enum Experience {
 

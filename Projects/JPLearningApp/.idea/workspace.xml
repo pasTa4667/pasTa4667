@@ -4,7 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19bd0e87-e579-4240-9894-30d6733bd7d9" name="Changes" comment="" />
+    <list default="true" id="19bd0e87-e579-4240-9894-30d6733bd7d9" name="Changes" comment="new PC branch&#10;added vocab reader and writer &#10;updated kanji- and vocablist to wordlist">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/WordList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/Words.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/kanji/KanjiWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/vocab/VTypeAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/vocab/Vocab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/vocab/VocabReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/vocab/VocabWriter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/jp/jplearningapp/test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/Labor/Kernel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/Labor/Shell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/Labor/ShellCorr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/blatt04/BigInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/blatt04/BufferedInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/blatt04/LogParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/Experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/Experience.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/controllers/TextFieldManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/controllers/TextFieldManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/kanji_json/KTypeAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/kanji/KTypeAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/kanji_json/Kanji.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/kanji/Kanji.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/kanji_json/KanjiList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/kanji/KanjiList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/kanji_json/KanjiReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jp/jplearningapp/json/kanji/KanjiReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jp/jplearningapp/kanji-wanikani.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/jp/jplearningapp/kanji-wanikani.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jp/jplearningapp/vocabs-wanikani.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/jp/jplearningapp/vocabs-wanikani.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/jpapp/test/FileReaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/jpapp/test/FileReaderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/api/AbstractAnimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/api/AbstractBird.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/api/AnimalIsDeadException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/api/BirdOfPrey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/api/Eagle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/api/Flyable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/api/Ingestable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/api/Moveable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/blatt02/Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/blatt03/GradeOverview.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/blatt03/HashMapArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/sokoban/Directions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/out/production/test/sokoban/Sokoban.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../test/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +62,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="LP_Branch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -30,21 +82,26 @@
     </option>
   </component>
   <component name="ProjectId" id="28WPn4UUQL8gzHDjqYJstwRh6Kw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Programming/IdeaProjects/JPLearningApp&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Felix/PastaGit/Projects/test&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.3402299&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.24656084&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Application">
+  <component name="RunManager" selected="JUnit.FileReaderTest.jsonTest">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.jp.jplearningapp.Application" />
       <module name="JPLearningApp" />
@@ -54,6 +111,22 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileReaderTest.converterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JPLearningApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jpapp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jpapp.test" />
+      <option name="MAIN_CLASS_NAME" value="jpapp.test.FileReaderTest" />
+      <option name="METHOD_NAME" value="converterTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -74,10 +147,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FileReaderTest.shellTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JPLearningApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jpapp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="com.jp.jplearningapp.vocab_json.StringToList" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jpapp.test" />
+      <option name="MAIN_CLASS_NAME" value="jpapp.test.FileReaderTest" />
+      <option name="METHOD_NAME" value="shellTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileReaderTest.toListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JPLearningApp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jpapp.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jpapp.test" />
+      <option name="MAIN_CLASS_NAME" value="jpapp.test.FileReaderTest" />
+      <option name="METHOD_NAME" value="toListTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.FileReaderTest.jsonTest" />
+        <item itemvalue="JUnit.FileReaderTest.converterTest" />
+        <item itemvalue="JUnit.FileReaderTest.shellTest" />
+        <item itemvalue="JUnit.FileReaderTest.toListTest" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>
@@ -91,5 +203,26 @@
       <updated>1651329534077</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="new PC branch&#10;added vocab reader and writer &#10;updated kanji- and vocablist to wordlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="new PC branch&#10;added vocab reader and writer &#10;updated kanji- and vocablist to wordlist" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JPLearningApp$FileReaderTest_shellTest.ic" NAME="FileReaderTest.shellTest Coverage Results" MODIFIED="1653567864017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>jpapp.test.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -17,5 +17,7 @@ module com.jp.jplearningapp {
     exports com.jp.jplearningapp;
     exports com.jp.jplearningapp.controllers;
     opens com.jp.jplearningapp.controllers to javafx.fxml;
+    exports com.jp.jplearningapp.json;
+    opens com.jp.jplearningapp.json to javafx.fxml;
 
 }

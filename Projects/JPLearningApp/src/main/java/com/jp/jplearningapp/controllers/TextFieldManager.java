@@ -1,8 +1,8 @@
 package com.jp.jplearningapp.controllers;
 
-import com.jp.jplearningapp.kanji_json.Kanji;
-import com.jp.jplearningapp.kanji_json.KanjiList;
-import com.jp.jplearningapp.kanji_json.KanjiReader;
+import com.jp.jplearningapp.json.WordList;
+import com.jp.jplearningapp.json.kanji.Kanji;
+import com.jp.jplearningapp.json.kanji.KanjiReader;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
@@ -17,7 +17,7 @@ public class TextFieldManager {
 
     //stuff to iterate over the list
     private final KanjiReader kReader = new KanjiReader();
-    private final KanjiList kanjiList = kReader.getKanjis();
+    private final WordList<Kanji> kanjiList = kReader.getKanjis();
     private int listPos = 0;
     private List<Kanji> levelList;
     private Kanji current = null;
@@ -100,7 +100,7 @@ public class TextFieldManager {
         }
     }
 
-    public KanjiList getKanjiList() {
+    public WordList<Kanji> getKanjiList() {
         return kanjiList;
     }
 
