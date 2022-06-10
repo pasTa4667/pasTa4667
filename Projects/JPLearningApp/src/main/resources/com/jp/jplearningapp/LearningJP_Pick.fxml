@@ -17,7 +17,7 @@
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#2c3d55" height="62.0" stroke="#2c3d55" strokeType="INSIDE" width="640.0" />
       <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="90.0" prefWidth="640.0" style="-fx-padding: 5px;">
          <children>
-            <Text fill="#2c3d55" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your Level" textAlignment="CENTER" wrappingWidth="600.0">
+            <Text fx:id="slider_text" fill="#2c3d55" strokeType="OUTSIDE" strokeWidth="0.0" text="Choose your Level" textAlignment="CENTER" wrappingWidth="600.0">
                <font>
                   <Font name="Verdana" size="30.0" />
                </font>

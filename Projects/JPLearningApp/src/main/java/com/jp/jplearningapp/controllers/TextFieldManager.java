@@ -3,6 +3,7 @@ package com.jp.jplearningapp.controllers;
 import com.jp.jplearningapp.json.WordList;
 import com.jp.jplearningapp.json.kanji.Kanji;
 import com.jp.jplearningapp.json.kanji.KanjiReader;
+import com.jp.jplearningapp.json.vocab.VocabReader;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 
@@ -11,21 +12,22 @@ import java.util.List;
 public class TextFieldManager {
 
 
-    private final TextField meaningTF, onyomiTF, kunyomiTF;
-    private final Text promptText;
-    private final Text meaningCorr, onyomiCorr, kunyomiCorr;
+    private TextField meaningTF, onyomiTF, kunyomiTF;
+    private Text promptText;
+    private Text meaningCorr, onyomiCorr, kunyomiCorr;
 
     //stuff to iterate over the list
-    private final KanjiReader kReader = new KanjiReader();
-    private final WordList<Kanji> kanjiList = kReader.getKanjis();
+    private KanjiReader kReader;
+    private VocabReader vReader;
+    private WordList wordList;
     private int listPos = 0;
-    private List<Kanji> levelList;
+    private List levelList;
     private Kanji current = null;
 
     ControllerMain controllerMain;
 
 
-    public TextFieldManager(int level){
+    public TextFieldManager(int level, String choice){
         this.controllerMain = ControllerManager.getControllerMain();
         this.meaningCorr = controllerMain.meaningCorr;
         this.onyomiCorr = controllerMain.onyomiCorr;
@@ -41,7 +43,20 @@ public class TextFieldManager {
         onyomiTF.setFocusTraversable(true);
         kunyomiTF.setFocusTraversable(true);
 
-        this.levelList = kanjiList.getShuffledList(level);
+        switch(choice){
+            case "Kanji" :
+                kReader = new KanjiReader();
+                wordList = kReader.getKanjis();
+                levelList = wordList.getShuffledList(level);
+            case "Vocabs" :
+                vReader = new VocabReader();
+                wordList = vReader.getVocabList();
+                levelList = wordList.getShuffledList(level);
+            case "Kanji and Vocabs" :
+                //TODO: do both
+        }
+
+
         this.changePrompt();
     }
 
@@ -89,7 +104,7 @@ public class TextFieldManager {
     //changes prompt to random kanji
     public void changePrompt(){
         if(listPos < levelList.size()){
-            current = levelList.get(listPos++);
+            current = (Kanji)levelList.get(listPos++);
             promptText.setText(current.sign);
             this.resetTexts();
             if(current.wk_readings_on.isEmpty()) onyomiTF.setText("存在しない");
@@ -100,8 +115,8 @@ public class TextFieldManager {
         }
     }
 
-    public WordList<Kanji> getKanjiList() {
-        return kanjiList;
+    public WordList getKanjiList() {
+        return wordList;
     }
 
     public List<Kanji> getLevelList() {
